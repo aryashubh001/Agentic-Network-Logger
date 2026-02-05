@@ -2,14 +2,11 @@ import psycopg2
 import time
 import random
 from datetime import datetime
-
-# ---------------------------------------------------------
-# SAFE MODE CONNECTION SETTINGS
-# ---------------------------------------------------------
-DB_HOST = "ewb957g0ww.fsva2nvb8c.tsdb.cloud.timescale.com"
-DB_PORT = "36551"
+# safe mode connection
+DB_HOST = "Paste your host here"
+DB_PORT = "Port Number"
 DB_USER = "tsdbadmin"
-DB_PASS = "@AryaShubh123"  # <--- CHECK THIS! Is this your password?
+DB_PASS = "Password"
 DB_NAME = "tsdb"
 
 def start_agent():
@@ -48,4 +45,5 @@ def start_agent():
         print("HINT: If the password is wrong, go to Timescale Dashboard -> Project Settings -> Reset Password.")
 
 if __name__ == "__main__":
+
     start_agent()
